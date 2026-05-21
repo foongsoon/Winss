@@ -4,6 +4,7 @@
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
 <title>Winners</title>
+<link rel="icon" href="https://i.ibb.co/ccQGh3Hj/Favicon.png"/>
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow+Condensed:wght@300;400;500;600;700;800;900&family=Barlow:wght@300;400;500;600&display=swap" rel="stylesheet"/>
 <style>
@@ -362,13 +363,32 @@ nav{
   font-weight:700;letter-spacing:.12em;text-transform:uppercase;
   transition:background .2s,transform .15s;
 }
-.form-submit:hover{background:#a00308;transform:translateY(-2px)}
-.map-wrap{
-  margin-top:1.8rem;background:var(--dark2);
-  border:1px solid rgba(255,255,255,.06);overflow:hidden;
-  aspect-ratio:16/9;
-}
-.map-wrap iframe{width:100%;height:100%;border:none;filter:grayscale(1) invert(1) hue-rotate(175deg) saturate(.4)}
+  /* ── DOL TABLE ───────────────────────────────────── */
+  .table-wrap { overflow-x: auto; margin-top: 1.5rem; border-radius: 4px; }
+  table { width: 100%; border-collapse: collapse; font-size: 0.87rem; }
+  thead tr { background: var(--red); }
+  thead th {
+    padding: 12px 14px; text-align: left;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 0.8rem; font-weight: 700; letter-spacing: 0.08em;
+    text-transform: uppercase; color: var(--white);
+    white-space: nowrap;
+  }
+  tbody tr { border-bottom: 1px solid rgba(255,255,255,0.05); }
+  tbody tr:nth-child(even) { background: rgba(255,255,255,0.025); }
+  tbody tr:hover { background: rgba(212,4,10,0.07); }
+  tbody td { padding: 10px 14px; color: var(--steel); white-space: nowrap; }
+  tbody td:first-child { color: var(--white); font-weight: 700; font-family: 'Barlow Condensed', sans-serif; font-size: 1rem; }
+  .tor-badge {
+    background: rgba(212,4,10,0.12);
+    border: 1px solid rgba(212,4,10,0.25);
+    color: var(--red-light);
+    padding: 2px 8px; border-radius: 2px;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 700; font-size: 0.85rem;
+  }
+  
+	.map-wrap iframe{width:100%;height:100%;border:none;filter:grayscale(1) invert(1) hue-rotate(175deg) saturate(.4)}
 
 /* ── FOOTER ── */
 footer{
@@ -494,7 +514,6 @@ footer{
       We are a specialist distributor of Winss branded electrical accessories based in Klang, Selangor. Serving commercial and industrial clients across Malaysia, we supply high-quality switchgear and isolation products that meet international safety standards.
     </p>
     <ul class="about-list">
-      <li>Authorised Winss distributor for the Malaysian market</li>
       <li>All products comply with IEC international safety standards</li>
       <li>Ready stock — fast delivery from our Klang warehouse</li>
       <li>Technical support available via call or WhatsApp</li>
@@ -603,6 +622,97 @@ footer{
   </div>
 </section>
 
+
+    <!-- DOL STARTERS -->
+<section id="product">
+  <div class="prod-header reveal" style="text-align:center;margin-bottom:4rem">
+    <div class="about-label" style="text-align:center;margin-bottom:.5rem">Other Products</div>
+    <h2 class="section-h2" style="text-align:center">Winss <em>DOL Series</em> Direct On Line Magnetic Starters</h2>
+  </div>
+    <div class="product-section">
+      <div class="product-header">
+        <div class="product-header-icon">⚡<div class="product-header-sub"> Utilization Category: AC3 · Coil: Class E · IP20 · IEC 60947-4-1 · Steel Enclosure</div>
+        </div>
+      </div>
+
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Type</th>
+              <th>1Ø HP</th>
+              <th>1Ø KW</th>
+              <th>1Ø T.O.R.</th>
+              <th>3Ø HP</th>
+              <th>3Ø KW</th>
+              <th>3Ø T.O.R.</th>
+              <th>L×W×H (mm)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>H-12 LB</td>
+              <td>1</td><td>0.75</td><td><span class="tor-badge">3A–7A (5A)</span></td>
+              <td>1</td><td>0.75</td><td><span class="tor-badge">1A–2A (1.5A)</span></td>
+              <td>165×96×113</td>
+            </tr>
+            <tr>
+              <td>H-12 LB</td>
+              <td>—</td><td>—</td><td>—</td>
+              <td>2</td><td>1.5</td><td><span class="tor-badge">2A–4A (3A)</span></td>
+              <td>165×96×113</td>
+            </tr>
+            <tr>
+              <td>H-12 LB</td>
+              <td>—</td><td>—</td><td>—</td>
+              <td>3</td><td>2.25</td><td><span class="tor-badge">3.5A–5.5A (4.5A)</span></td>
+              <td>165×96×113</td>
+            </tr>
+            <tr>
+              <td>H-12 LB</td>
+              <td>—</td><td>—</td><td>—</td>
+              <td>5</td><td>3.75</td><td><span class="tor-badge">5A–9A (7A)</span></td>
+              <td>165×96×113</td>
+            </tr>
+            <tr>
+              <td>H-25 LB</td>
+              <td>2</td><td>1.5</td><td><span class="tor-badge">5A–13A (9A)</span></td>
+              <td>7.5</td><td>5.6</td><td><span class="tor-badge">9A–14A (11A)</span></td>
+              <td>165×96×113</td>
+            </tr>
+            <tr>
+              <td>H-25 LB</td>
+              <td>3</td><td>2.25</td><td><span class="tor-badge">8A–18A (13A)</span></td>
+              <td>—</td><td>—</td><td>—</td>
+              <td>165×96×113</td>
+            </tr>
+            <tr>
+              <td>H-32 LB</td>
+              <td>—</td><td>—</td><td>—</td>
+              <td>10</td><td>7.5</td><td><span class="tor-badge">12A–18A (15A)</span></td>
+              <td>223×133×140</td>
+            </tr>
+            <tr>
+              <td>H-40 LB</td>
+              <td>—</td><td>—</td><td>—</td>
+              <td>15</td><td>11.25</td><td><span class="tor-badge">18A–26A (22A)</span></td>
+              <td>223×133×140</td>
+            </tr>
+            <tr>
+              <td>H-50 LB</td>
+              <td>5</td><td>3.75</td><td><span class="tor-badge">15A–23A (19A)</span></td>
+              <td>20</td><td>15</td><td><span class="tor-badge">23A–35A (29A)</span></td>
+              <td>223×133×140</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p style="font-size:0.8rem;color:var(--gray);margin-top:.7rem;">T.O.R. = Thermal Overload Relay range; rated amps shown in parentheses. Single Phase: 240 Vac 50–60 Hz. Three Phase: 415 Vac 50–60 Hz.</p>
+    </div>
+  </div>
+</section>
+  
+  
 <!-- ── WHY US ── -->
 <section id="why">
   <div style="text-align:center" class="reveal">
@@ -677,10 +787,16 @@ footer{
       <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.168L2 22l4.985-1.312A9.96 9.96 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2zm0 18c-1.72 0-3.328-.463-4.712-1.267l-.338-.2-3.506.922.937-3.42-.22-.352A7.952 7.952 0 014 12c0-4.411 3.589-8 8-8s8 3.589 8 8-3.589 8-8 8z"/></svg>
       Chat on WhatsApp
     </a>
+     </div>
+      <div class="contact-card">
+        <div class="cc-icon">📍</div>
+        <div>
+          <div class="cc-label">Direction</div>
+      </div>
     <div class="map-wrap">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1991.9666145991712!2d101.4251826813802!3d3.112368880295534!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc5402f7adb8ef%3A0x1061aae66b8c8002!2s19%2C%20Jln%20Perindustrian%204%2Fku%208%2C%20Taman%20Perindustrian%20Able%20Link%2C%2041050%20Klang%2C%20Selangor!5e0!3m2!1sen!2smy!4v1779342071433!5m2!1sen!2smy" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1991.9666145991712!2d101.4251826813802!3d3.112368880295534!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc5402f7adb8ef%3A0x1061aae66b8c8002!2s19%2C%20Jln%20Perindustrian%204%2Fku%208%2C%20Taman%20Perindustrian%20Able%20Link%2C%2041050%20Klang%2C%20Selangor!5e0!3m2!1sen!2smy!4v1779342071433!5m2!1sen!2smy" width="90%" height="90%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
-  </div>
+
 </section>
 
 <!-- ── FOOTER ── -->
