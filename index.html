@@ -386,10 +386,19 @@ nav{
     padding: 2px 8px; border-radius: 2px;
     font-family: 'Barlow Condensed', sans-serif;
     font-weight: 700; font-size: 0.85rem;
-  }
-  
-	.map-wrap iframe{width:100%;height:100%;border:none;filter:grayscale(1) invert(1) hue-rotate(175deg) saturate(.4)}
-
+}
+/* ── MAP ── */
+.map-wrap{
+  margin-top:2rem;
+  width:100%;height:360px;
+  overflow:hidden;
+  border:1px solid rgba(255,255,255,.06);
+}
+.map-wrap iframe{
+  width:100%;height:100%;border:none;
+  filter:grayscale(1) invert(1) hue-rotate(175deg) saturate(.4);
+}
+	  
 /* ── FOOTER ── */
 footer{
   background:var(--black);border-top:1px solid rgba(255,255,255,.07);
@@ -423,6 +432,7 @@ footer{
   .features-grid,.form-row,.model-cards,.stat-grid{grid-template-columns:1fr}
   #about,#product,#why,#contact{padding:70px 5vw}
   .hero-h1{font-size:clamp(3.5rem,12vw,5rem)}
+  .map-wrap{height:260px}
 }
 
 /* ── SCROLL REVEAL ── */
@@ -787,16 +797,19 @@ footer{
       <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.168L2 22l4.985-1.312A9.96 9.96 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2zm0 18c-1.72 0-3.328-.463-4.712-1.267l-.338-.2-3.506.922.937-3.42-.22-.352A7.952 7.952 0 014 12c0-4.411 3.589-8 8-8s8 3.589 8 8-3.589 8-8 8z"/></svg>
       Chat on WhatsApp
     </a>
-     </div>
-      <div class="contact-card">
-        <div class="cc-icon">📍</div>
-        <div>
-          <div class="cc-label">Direction</div>
-      </div>
-    <div class="map-wrap">
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1991.9666145991712!2d101.4251826813802!3d3.112368880295534!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc5402f7adb8ef%3A0x1061aae66b8c8002!2s19%2C%20Jln%20Perindustrian%204%2Fku%208%2C%20Taman%20Perindustrian%20Able%20Link%2C%2041050%20Klang%2C%20Selangor!5e0!3m2!1sen!2smy!4v1779342071433!5m2!1sen!2smy" width="90%" height="90%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div>
 
+      <!-- Map (fixed: parent now has explicit height so iframe renders) -->
+      <div class="about-label" style="margin-top:2rem;margin-bottom:.5rem">Direction</div>
+      <div class="map-wrap">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1991.9666145991712!2d101.4251826813802!3d3.112368880295534!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc5402f7adb8ef%3A0x1061aae66b8c8002!2s19%2C%20Jln%20Perindustrian%204%2Fku%208%2C%20Taman%20Perindustrian%20Able%20Link%2C%2041050%20Klang%2C%20Selangor!5e0!3m2!1sen!2smy!4v1779342071433!5m2!1sen!2smy"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Winners Synergy Solution location map">
+        </iframe>
+      </div>
+    </div>
 </section>
 
 <!-- ── FOOTER ── -->
